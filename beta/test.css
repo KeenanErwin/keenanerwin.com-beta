@@ -1,0 +1,378 @@
+/* Global */
+
+
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+
+h1, h2, li, a, label, input, textarea {
+    font-family: 'Avenir', sans-serif;
+    text-decoration: none;
+}  
+
+
+.decrease-li-margin {
+    margin-top: 6px; 
+}
+
+
+.nav * {
+    color: rgba(255,255,255,0.7);
+    font-size: 27px;    
+    font-weight: 300;
+    text-align: left;      
+}
+
+
+li{
+	list-style-type: none;
+}
+
+
+a:hover, #lightbox-background, #stuff-ive-made, #talk-to-me, #lucy-photo, input[type=submit] {
+    cursor: pointer;
+}
+
+
+div + a:hover {
+    color: rgba(255,255,255,1);    
+}
+
+
+.email-form {
+	position: absolute; 
+	left: 17px; 
+	top: 21px; 
+	font-size: 37px; 
+	color: rgb(255, 255, 255); 
+	line-height: 1.2; 
+	letter-spacing: 1.5px;
+}
+
+
+input, textarea {
+    background-color: rgba(255,255,255,0.7);
+    outline: none;  
+}
+
+
+input:focus, textarea:focus { 
+    background-color: rgba(255,255,255,1);;
+}
+
+
+.input-blur-keep-background-white {
+	background-color: white;
+}
+
+ 
+.photo-credit, .photo-credit:visited {
+    color: rgba(255,255,255,0.7); 
+    font-size: 12px; 
+    margin: 450px 0 43px; 
+    font-weight: 300; 
+    letter-spacing: 0.1px; 
+    line-height: 1.2; 
+    float: right;
+    bottom: 200px;
+}
+
+
+.photo-credit:hover {
+	color: rgba(255,255,255,1);
+}
+
+
+.hidden {
+	opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Media Queries  */
+
+
+@media screen and (orientation : landscape){
+
+	.background-image {
+		background-image: url('images/by-jonas-nilsson-lee.jpg');
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		position: fixed;
+		z-index: -999;
+		background-repeat: no-repeat;
+	} 
+
+
+	#lucy-photo {
+	position: absolute; 
+	left: 50%; 
+	margin-top: 200px; 
+	margin-left: -252px; 
+	z-index: 3;
+	}
+
+
+	.container {
+		position: relative; 
+		width: 88.9%; 
+		height: 0; 
+		margin: 75vh auto;
+	}
+
+
+	.header {
+		position: relative; 
+		width: 418px;
+		height: 106px;	
+		margin: auto;
+		border: solid 2px #ffffff;
+	}
+
+
+	.header-line-1 {
+		font-size: 32.4px;
+		font-weight: 300;    
+		letter-spacing: 0;
+		padding-top: 15px;    
+		line-height: 1.2;
+		text-align: center;
+		color: #ffffff;    
+	}
+
+
+	.header-line-2 {
+		font-size: 37px;    
+		font-weight: 500;
+		letter-spacing: 0.2px;
+		line-height: 1.2;
+		text-align: center;
+		color: #ffffff;
+	}
+
+
+	.container-2 {
+		float: left; 
+		margin-top: 335px;
+    }
+
+
+    h2 {
+	    height: 40px;
+	    font-size: 37px;
+	    font-weight: 300;    
+	    letter-spacing: 0.05px;
+	    line-height: 1.2;
+	    text-align: left;
+	    color: #ffffff;
+	    text-shadow: 0 0 10px #000000;        
+	}
+
+
+	li {
+	    margin-top: 7px;
+	    margin-left: 10px;
+	    list-style-type: none;
+	}
+
+
+	#pure-lonboards-certificates *, #saddleback-leather-co {
+	    color: #ffea00;
+	}
+
+
+	.big {
+    font-size: 28px;
+    color: rgba(255,255,255,1);
+    text-shadow: 0 0 5px #000000;
+    margin: 0;    
+	}
+} 
+
+
+
+
+
+
+
+
+
+
+@media screen and (orientation : portrait) {
+ 
+	.background-image {
+		background-image: url('images/by-jonas-nilsson-lee-mobile.jpg');
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;	    
+		overflow: hidden;
+		position: fixed;
+		z-index: -999;
+		background-repeat: no-repeat;
+	}     
+
+
+	#lucy-photo {
+		position: absolute; 
+		margin: 25px auto; 
+		z-index: 3;
+		width: 92%;
+		left: 4%;
+		top: 29.9vw;
+	}
+
+
+	.container {
+		position: relative; 
+		width: 100%; 
+		height: 89.4vh; 
+		margin-top: 5.3vh;
+	}
+
+
+	.header {
+		position: relative; 
+	    width: 94.3%;         
+	    margin: auto;
+	    border: solid 2px black;
+	}
+
+
+	.header-line-1 {
+	    font-size: 7vw;
+	    font-weight: 300;    
+	    letter-spacing: 0;
+	    line-height: 0.85;
+	    text-align: center;
+	    color: black; 
+	}
+
+
+	.header-line-2 {
+	    font-size: 8vw;    
+	    font-weight: 500;
+	    letter-spacing: 0.2px;
+	    line-height: 0.4;
+	    text-align: center;
+	    color: black;
+	}
+
+	
+    .container-2 {
+		width: 95.3%;
+		margin: auto;
+		position: absolute;
+		bottom: 0;
+		left: 2.2vw; 
+    }
+
+    .container-2-add-on{		/* ADD THIS WITH JQUERY */
+		margin: 1.2vh 0 5.6vh;
+		position: relative;
+    }
+
+
+    .container-2-add-on::after{
+    	content: ".";
+    	visibility: hidden;
+    }
+
+ 
+	h2 {
+	    font-size: 9vw;
+	    font-weight: 300;    
+	    line-height: 0.9;
+	    text-align: center;
+	    color: #ffffff;
+	    text-shadow: 0 0 10px #000000;
+	    background: rgba(0,0,0,0.5);
+	    padding: 2.65vh;
+	    margin: 0;   	         
+	}
+
+ 
+	.nav * {
+	    font-size: 10.17vw; 
+	    text-align: center;
+	    color: black;      
+	}
+
+
+	ul{
+		display: block; 
+		padding-left: 10px;
+		margin: 1.5vw 0;
+	}
+
+
+	ul.nav{
+
+		margin: 0;
+	}
+
+
+	ul li a{
+		background: rgba(255,255,0,0.5); 
+		width: 100%;
+		padding: 1.55vw 0; 
+		display: block; 
+		margin: 1.5vw 0; 
+	}
+
+
+	.nav ul li a{
+		background: rgba(255,255,255,0.5);
+		margin: 4vw 0;   /* delete */
+		margin: 1.5vw 0; /* delete */
+	}
+
+
+	#pure-lonboards-certificates *, #saddleback-leather-co {
+	    color: #000000;
+	}
+
+
+	.photo-credit{
+		display: none;
+	}	
+}
+
+
+
+
+.black {
+    color: #000000; 
+    border-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
